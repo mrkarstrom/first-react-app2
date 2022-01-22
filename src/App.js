@@ -5,6 +5,12 @@ function App() {
     { id: 1, text: 'Here is comment one' },
     { id: 2, text: 'Here is comment two' },
     { id: 3, text: 'Here is comment three' },
+    { id: 4, text: 'Here is comment four' },
+    { id: 5, text: 'Here is comment five' },
+    { id: 6, text: 'Here is comment six' },
+    { id: 7, text: 'Here is comment seven' },
+    { id: 8, text: 'Here is comment eight' },
+    { id: 9, text: 'Here is comment nine' },
   ];
 
   return (
