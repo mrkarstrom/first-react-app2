@@ -1,4 +1,7 @@
-import Header from "./components/Header";
+import Header from './components/Header';
+import Main from './components/Main';
+import Test from './components/Test';
+import Wild from './components/Wild';
 
 function App() {
   const title = 'Welcome to my blog';
@@ -17,21 +20,24 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <div className="container">
-      <h1>{title.toUpperCase()}</h1>
-      <h2>{body}</h2>
-      {Math.floor(Math.random() * 6) + 1}
+      <Wild />
+      <Header />
+      <div className="container">
+        <h1>{title.toUpperCase()}</h1>
+        <h2>{body}</h2>
+        {Math.floor(Math.random() * 6) + 1}
 
-      <div className="comments">
-        <h3>Comments ({comments.length})</h3>
-        <ul>
-          {comments.map((comment, index) => (
-            <li>{comment.text}</li>
-          ))}
-        </ul>
+        <div className="comments">
+          <h3>Comments ({comments.length})</h3>
+          <ul>
+            {comments.map((comment, index) => (
+              <li>{comment.text}</li>
+            ))}
+          </ul>
+        </div>
+        <Test />
       </div>
-    </div>
+      <Main />
     </>
   );
 }
