@@ -1,3 +1,5 @@
+import Header from "./components/Header";
+
 function App() {
   const title = 'Welcome to my blog';
   const body = 'This is the first blog post';
@@ -14,6 +16,8 @@ function App() {
   ];
 
   return (
+    <>
+    <Header/>
     <div className="container">
       <h1>{title.toUpperCase()}</h1>
       <h2>{body}</h2>
@@ -28,6 +32,7 @@ function App() {
         </ul>
       </div>
     </div>
+    </>
   );
 }
 
