@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Wild />
-      <Header />
+      <Header text="Hello World!" />
       <div className="container">
         <h1>{title.toUpperCase()}</h1>
         <h2>{body}</h2>
@@ -37,7 +37,7 @@ function App() {
         </div>
         <Test />
       </div>
-      <Main />
+      <Main mainText="Fine" />
     </>
   );
 }
