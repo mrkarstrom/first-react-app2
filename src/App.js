@@ -21,10 +21,7 @@ function App() {
   return (
     <>
       <Wild />
-      <Header
-        style={{ backgroundColor: 'blue', color: 'red' }}
-        text="Hello World!"
-      />
+      <Header />
       <div className="container" style={{ color: 'red' }}>
         <h1>{title.toUpperCase()}</h1>
         <h2>{body}</h2>
