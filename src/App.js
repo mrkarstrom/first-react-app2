@@ -21,8 +21,11 @@ function App() {
   return (
     <>
       <Wild />
-      <Header text="Hello World!" />
-      <div className="container">
+      <Header
+        style={{ backgroundColor: 'blue', color: 'red' }}
+        text="Hello World!"
+      />
+      <div className="container" style={{ color: 'red' }}>
         <h1>{title.toUpperCase()}</h1>
         <h2>{body}</h2>
         {Math.floor(Math.random() * 6) + 1}
@@ -35,9 +38,9 @@ function App() {
             ))}
           </ul>
         </div>
-        <Test />
+        <Test bgColor="white" textColor="green" />
       </div>
-      <Main mainText="Fine" />
+      <Main mainText="Fine and good" style={{ color: 'red' }} />
     </>
   );
 }
